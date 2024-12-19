@@ -19,7 +19,7 @@
       <h4 class="fw-bold fs-4 d-none d-lg-block">FUTBIN</h4>
       <ul class="d-flex gap-3 align-items-center d-none d-lg-flex">
         <li>HOME</li>
-        <li>Contact</li>
+        <li><a href="dashboard.php">dashboard</a></li>
       </ul>
     </nav>
     <!--Fin de bar de navigation-->
