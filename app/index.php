@@ -1,3 +1,4 @@
+<?php include('connection.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../src/styles.css" />
     <title>FutBin</title>
   </head>
   <body>

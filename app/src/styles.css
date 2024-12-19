@@ -98,7 +98,7 @@ button:hover {
 
 #container-2 {
 background: center;
-background-image: url("./img/stadium_background.webp");
+background-image: url("../img/stadium_background.webp");
 background-size: cover;
 width: 500px;
 min-height: 100vh;
