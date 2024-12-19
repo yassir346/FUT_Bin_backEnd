@@ -50,8 +50,13 @@ CREATE TABLE Player(
    id_3 INT NOT NULL,
    id_4 INT NOT NULL,
    PRIMARY KEY(id),
-   FOREIGN KEY(id_1) REFERENCES statistic_GK(id),
-   FOREIGN KEY(id_2) REFERENCES statistic_player(id),
-   FOREIGN KEY(id_3) REFERENCES nationnalite(id),
-   FOREIGN KEY(id_4) REFERENCES Equipe(id)
+   FOREIGN KEY(id_statistic_GK) REFERENCES statistic_GK(id),
+   FOREIGN KEY(id_statistic_player) REFERENCES statistic_player(id),
+   FOREIGN KEY(id_nationnalite) REFERENCES nationnalite(id),
+   FOREIGN KEY(id_Equipe) REFERENCES Equipe(id)
 );
+
+
+DROP TABLE Player;
+
+INSERT into 
