@@ -22,6 +22,15 @@
       <th scope="col">ID</th>
       <th scope="col">Name</th>
       <th scope="col">Position</th>
+      <th scope="col">Position</th>
+      <th scope="col">Position</th>
+      <th scope="col">Position</th>
+      <th scope="col">Position</th>
+      <th scope="col">Position</th>
+      <th scope="col">Position</th>
+      <th scope="col">Position</th>
+      <th scope="col">Position</th>
+      
     </tr>
   </thead>
   <tbody>
@@ -34,9 +43,19 @@
             ?>
             <tr>
                 <th scope="row"><?php echo $row["id"]?></th>
-                <td><?php echo$row["id"]?></td>
-                <td><?php echo$row["name"]?></td>
-                <td><?php echo$row["position_player"]?></td>
+                <td><?php echo $row["id"]?></td>
+                <td><?php echo $row["name"]?></td>
+                <td><?php echo $row["position_player"]?></td>
+                <td><img src="<?php echo $row["nationnalite_logo"] ?>"></td>
+                <td><img src="<?php echo $row["Equipe_logo"]?>"></td>
+                <td><?php echo $row["rating"]?></td>
+                <td><?php echo $row["pace"]?></td>
+                <td><?php echo $row["dribbling"]?></td>
+                <td><?php echo $row["shooting"]?></td>
+                <td><?php echo $row["passing"]?></td>
+                <td><?php echo $row["defending"]?></td>
+                <td><?php echo $row["physical"]?></td>
+
             </tr>
             <?php
         }

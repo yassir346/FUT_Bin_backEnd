@@ -17,7 +17,13 @@ if (!$conn) {
 }
 
 //SQL QUERY
-$query = "SELECT id, name, position_player FROM `Player`;";
+$query = "SELECT Player.id, Player.name, Player.position_player, nationnalite.logo as nationnalite_logo, Equipe.logo as Equipe_logo, statistic_player.rating, statistic_player.pace, statistic_player.dribbling, statistic_player.shooting, statistic_player.passing , statistic_player.defending ,statistic_player.physical
+FROM Player
+INNER JOIN nationnalite ON Player.id_nationnalite = nationnalite.id
+INNER JOIN statistic_player ON Player.id_statistic_player = statistic_player.id
+INNER JOIN Equipe ON Player.id_Equipe = Equipe.id
+INNER JOIN statistic_GK ON Player.id_statistic_GK = statistic_GK.id;";
+
 
 // FETCHING DATA FROM DATABASE
 $result = mysqli_query($conn, $query);
